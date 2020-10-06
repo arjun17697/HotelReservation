@@ -1,0 +1,50 @@
+package src;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class AddingHotelDetails {
+	public static void main(String args[]) throws ParseException{
+		ArrayList<HotelDetails> hotel= new ArrayList<HotelDetails>();
+		HotelDetails hotel1 = new HotelDetails("Lakewood",110,90,80,80,3);
+		HotelDetails hotel2 = new HotelDetails("Bridgewood",160,60,110,50,4);
+		HotelDetails hotel3 = new HotelDetails("Ridgewood",220,150,100,40,5);
+	hotel.add(hotel1);
+	hotel.add(hotel2);
+	hotel.add(hotel3);
+	
+	
+	//AddingUC2
+	findCheapestHotel();
+	
+	
+}
+
+	private static void findCheapestHotel() {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the start date in format ddMMyyy");
+		String startdate=sc.nextLine();
+		System.out.println("Enter the end date in format ddMMyyy");
+		String enddate=sc.nextLine();
+		
+		SimpleDateFormat myFormat = new SimpleDateFormat("ddMMyyyy");
+		try {
+			Date startsfrom=myFormat.parse(startdate);
+			Date endson=myFormat.parse(enddate);
+			
+			long noDays=(endson.getTime()-startsfrom.getTime())/(1000*60*60*24);
+			System.out.println("No. of days: "+ noDays);
+		}
+		catch(ParseException e)
+		{
+			e.printStackTrace();
+		}
+		
+		int 
+		
+	}
+}

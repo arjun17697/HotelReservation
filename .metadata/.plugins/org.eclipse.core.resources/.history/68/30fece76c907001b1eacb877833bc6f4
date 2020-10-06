@@ -1,12 +1,7 @@
 package src;
 
 public class HotelDetails {
-
-
-	public void setRegular_weekday(int regular_weekday) {
-		this.regular_weekday = regular_weekday;
-	}
-
+	private int regular_weekday;
 	private int regular_weekend;
 	private int reward_weekday;
 	private int reward_weekend;
@@ -63,12 +58,5 @@ public class HotelDetails {
 	public void setHotelName(String hotelName) {
 		this.hotelName = hotelName;
 	}
-	private int regular_weekday;
-	public int getRegular_weekday() {
-		return regular_weekday;
-	}
-	public static void main(String[] args) {
-	System.out.println("Welcome to Hotel Reservation Program");
 
-}
 }
