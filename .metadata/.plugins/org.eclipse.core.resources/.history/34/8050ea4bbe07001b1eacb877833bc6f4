@@ -1,0 +1,41 @@
+package src;
+
+public class HotelDetails {
+	
+	public HotelDetails(String hotelName, int regular_weekday, int regular_weekend, int reward_weekday,
+			int reward_weekend, int rating) {
+		super();
+		this.hotelName = hotelName;
+		this.regular_weekday = regular_weekday;
+		this.regular_weekend = regular_weekend;
+		this.reward_weekday = reward_weekday;
+		this.reward_weekend = reward_weekend;
+		this.rating = rating;
+	}
+	private int regular_weekday;
+	private int regular_weekend;
+	private int reward_weekday;
+	private int reward_weekend;
+	private int rating;
+	private String hotelName;
+	
+	public String getHotelName() {
+		return hotelName;
+	}
+	public void setHotelName(String hotelName) {
+		this.hotelName = hotelName;
+	}
+	public int getRegular_weekday() {
+		return regular_weekday;
+	}
+	public void setRegular_weekday(int regular_weekday) {
+		this.regular_weekday = regular_weekday;
+	}
+	public HotelDetails(String hotelName, int regular_weekday) {
+		
+		this.hotelName = hotelName;
+		this.regular_weekday = regular_weekday;
+	}
+	
+
+}

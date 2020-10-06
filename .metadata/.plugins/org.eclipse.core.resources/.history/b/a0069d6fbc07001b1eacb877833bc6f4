@@ -1,0 +1,7 @@
+package src;
+
+public class HotelDetails {
+	String hotelName;
+	int regular_weekday;
+
+}
